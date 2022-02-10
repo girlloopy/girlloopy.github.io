@@ -19,7 +19,7 @@
 	];
 </script>
 
-<div class="parent">
+<div class="container">
 	<table>
 		{#each images as img}
 			<tr class="row">
@@ -40,6 +40,7 @@
 
 <style>
 	/* change the height for each  */
+
 	tr {
 		scroll-snap-align: start;
 		height: 100vh;
@@ -52,7 +53,6 @@
 		justify-content: center;
 		text-align: center;
 		padding: 20px;
-		background-color: black;
 	}
 
 	img {
@@ -60,16 +60,13 @@
 		width: 500px;
 	}
 
-	.parent {
+	.container {
 		overflow: auto;
 		scroll-snap-points-y: repeat(100vh);
 		scroll-snap-type: y mandatory;
 
-		background-color: pink;
 		height: 100vh;
 		width: 100vw;
-		border-radius: 6px;
-		padding: 1rem;
 	}
 	/* custom scrollbar */
 	::-webkit-scrollbar {
@@ -81,13 +78,9 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: pink;
+		background-color: green;
 		border-radius: 20px;
 		border: 6px solid transparent;
 		background-clip: content-box;
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background-color: #a8bbbf;
 	}
 </style>
