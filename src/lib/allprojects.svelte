@@ -21,10 +21,22 @@
 
 <div class="container">
 	<table>
-		{#each images as img}
-			<tr class="row">
-				<td class><img src="static/{img}" alt="test" /> </td>
-				<td>
+		<tbody>
+			{#each images as img}
+				<tr class="row">
+					<td class><img src="static/{img}" alt="test" /> </td>
+					<td>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic typesetting,
+						remaining essentially unchanged. It was popularised in the 1960s with the release of
+						Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</td>
+				</tr>
+				<!-- <tr class><img src="static/{img}" alt="test" /> </tr>
+				<tr>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
 					a galley of type and scrambled it to make a type specimen book. It has survived not only
@@ -32,9 +44,9 @@
 					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
 					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
 					PageMaker including versions of Lorem Ipsum.
-				</td>
-			</tr>
-		{/each}
+				</tr> -->
+			{/each}
+		</tbody>
 	</table>
 </div>
 
@@ -53,11 +65,17 @@
 		justify-content: center;
 		text-align: center;
 		padding: 20px;
+		max-width: 50vw;
+		max-height: 500px;
+		height: auto;
+		width: auto\9; /* ie8 */
 	}
 
 	img {
-		height: 500px;
-		width: 500px;
+		max-width: 50vw;
+		max-height: 50vh;
+		height: auto;
+		width: auto\9; /* ie8 */
 	}
 
 	.container {
